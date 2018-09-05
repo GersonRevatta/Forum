@@ -1,0 +1,4 @@
+%p= comment.id
+%p= comment.content
+= link_to 'edit', edit_post_comment_path(@post, comment)
+= link_to 'destroy', post_comment_path(@post, comment), method: :delete
